@@ -1,4 +1,4 @@
 Middle pelican theme
 ====================
 
-[DEMO](http://danielfrg.github.io)
+Simple and clean pelican theme for a blog. [DEMO](http://danielfrg.github.io)
