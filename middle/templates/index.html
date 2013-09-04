@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Thoughts about coding, data science, data analysis, python and more{% endblock %}
+
+{% block content %}
+<div class="index">
+    <p class='intro'>
+      This blog is written by <i>Daniel Rodriguez</i>. He writes about coding, python, data science and his projects.
+    </p>
+
+    <div class="list">
+        <p>Posts:</p>
+        <ul>
+        {% for article in articles %}
+          <li>
+            <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2>
+              <span>[ {{ article.locale_date }} ]</span>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
