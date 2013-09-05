@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ SITENAME }}</title>
-        <meta name="author" content="Daniel Rodriguez">
-        <meta name="description" content="Blog is written by Daniel Rodriguez. He writes about coding, python, data science and his projects.">
+        <meta name="author" content="{{AUTHOR}}">
+        <meta name="description" content="{{ HOMEPAGE_INTRO }}">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="alternate" type="application/atom+xml" title="Daniel Rodriguez blog atom feed"
+        <link rel="alternate" type="application/atom+xml" title="{{SITENAME}} blog atom feed"
               href="/feeds/all.atom.xml" />
         <link rel="stylesheet" href="/theme/css/normalize.min.css">
         <link rel="stylesheet" href="/theme/css/fonts/proximanova.css">
@@ -22,7 +22,7 @@
 
 <div class="index">
     <p class='intro'>
-      This blog is written by <i>Daniel Rodriguez</i>. He writes about coding, python, data science and his projects.
+        {{HOMEPAGE_INTRO}}
     </p>
 
     <div class="list">
