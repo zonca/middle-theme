@@ -57,10 +57,12 @@
         </div>
     </div>
 
+    {% if ENABLE_DISQUS %}
     <div id="disqus_thread" class="comments container"></div>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </section>
+    {% endif %}
 
 <script src="/theme/js/social.js"></script>
 {% endblock %}
