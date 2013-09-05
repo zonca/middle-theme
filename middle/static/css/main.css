@@ -209,3 +209,9 @@ div.index .list ul li span {
   color: #FFF;
   text-decoration: underline;
 }
+
+.post-content {
+    max-width:750px;
+    margin-left: auto;
+    margin-right: auto;
+}
