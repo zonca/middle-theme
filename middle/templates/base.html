@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="/theme/css/pygments.css">
         <!-- <link rel="stylesheet" href="/theme/css/ipython.css"> -->
         <link rel="stylesheet" href="/theme/css/main.css">
+        {% block extrahead %}{% endblock %}
     </head>
     <body>
         <div class="header">
@@ -53,5 +54,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
         </script>
+        {% block extrajs %} {% endblock %}
     </body>
 </html>

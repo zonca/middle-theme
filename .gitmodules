@@ -1,0 +1,3 @@
+[submodule "middle/static/js/github-files"]
+	path = middle/static/js/github-files
+	url = https://github.com/jamesward/github-files.git
