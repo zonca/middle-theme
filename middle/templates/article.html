@@ -12,7 +12,7 @@
 {% block extrajs %}
 <script>
 $(document).ready(function () {
-    $("pre code").each(function(i, e){
+    $("pre").each(function(i, e){
         console.log(e);
         if (e.textContent.match("^github")) {
             var parts = e.textContent.split(":")[1].split("/");
