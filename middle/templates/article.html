@@ -6,6 +6,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/github.min.css">
 <script src="/theme/js/github-files/src/main/javascript/github-files.js"> </script>
+<script src="https://apis.google.com/js/plusone.js"></script>
 {% endblock %}
 
 {% block extrajs %}
@@ -20,6 +21,12 @@ $(document).ready(function () {
                 hljs.highlightBlock(e);
             } );
         };
+    });
+    gapi.comments.render('comments', {
+        href: window.location,
+        width: '600',
+        first_party_property: 'BLOGGER',
+        view_type: 'FILTERED_POSTMOD'
     });
  });
 </script>
@@ -92,7 +99,6 @@ $(document).ready(function () {
     <div id="comments"></div>
     </div>
 
-    {{ article.metadata.googleplus_comments }}
 
 <script src="/theme/js/social.js"></script>
 {% endblock %}
