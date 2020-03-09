@@ -32,6 +32,8 @@ $(document).ready(function () {
     <article>
         <header>
             <h1>{{ article.title }}</h1>
+            <meta http-equiv="refresh" content="0; URL=https://zonca.dev/{{ article.url }}">
+            <link rel="canonical" href="https://zonca.dev/{{ article.url }}">
         </header>
         <div class='post-content'>
             {{ article.content }}
